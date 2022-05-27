@@ -9,7 +9,7 @@ It all the steps to complete this test.
 If you want to try other image, just modify the url string.     
 And you can save the image after comment out cv2.imwrite(".\image.jpg",getImage(url))   
 ### Example
-
+Put your url string to the function
     def getImage(url):
         result=requests.get(url)
         ### btye string解析
