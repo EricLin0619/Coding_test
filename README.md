@@ -9,7 +9,6 @@ It all the steps to complete this test.
 If you want to try other image, just modify the url string.     
 And you can save the image after comment out cv2.imwrite(".\image.jpg",getImage(url))   
 ### Example
-'''
 
     def getImage(url):
         result=requests.get(url)
@@ -22,4 +21,4 @@ And you can save the image after comment out cv2.imwrite(".\image.jpg",getImage(
         img=cv2.flip(img,0) #沿x軸翻轉
         img=cv2.flip(img,1) #沿y軸翻轉
         return img
-'''
+
