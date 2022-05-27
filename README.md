@@ -25,7 +25,7 @@ To test whether the result from getImage( ) is numpy array.
        if __name__=="__main__":
            unittest.main()
         
-test result:
+test result:     
 ![圖片](https://github.com/EricLin0619/Coding_test/blob/main/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202022-05-27%20142147.png?raw=true "")  
 
 
