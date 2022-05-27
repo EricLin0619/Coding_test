@@ -9,16 +9,8 @@ It all the steps to complete this test.
 If you want to try other image, just modify the url string.     
 And you can save the image after comment out cv2.imwrite(".\image.jpg",getImage(url))   
 ### Example
-Put your url string to the function
-    def getImage(url):
-        result=requests.get(url)
-        ### btye string解析
-        imgstring = np.array(result.content).tobytes()
-        imgstring = np.asarray(bytearray(imgstring), dtype="uint8")
-        img= cv2.imdecode(imgstring, cv2.IMREAD_COLOR)
+Put your url string to getImage()
 
-        img=cv2.resize(img,(600,int(img.shape[0]*600/img.shape[1]))) #調整照片比例
-        img=cv2.flip(img,0) #沿x軸翻轉
-        img=cv2.flip(img,1) #沿y軸翻轉
-        return img
-
+       cv2.imshow("show",getImage(url))
+       cv2.waitKey(0)
+You can see the image flipped by the getImage() 
